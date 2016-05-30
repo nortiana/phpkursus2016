@@ -1,0 +1,72 @@
+<?php // Ülesanne 0404
+// Kristil, phpkursus2016
+
+//ei ole algusest lõpuni minu tehtud aga mõttest saan aru
+?>
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1>Kangelase andmed</h1>
+
+  <form>
+
+
+    <table border="1">
+
+    <tr>
+      <td>Nimi:</td>
+      <td><input type="text" name="name" value="<?php if(isset($_GET["name"])) { echo $_GET['name']; } ?>"></td>
+    </tr>
+    <tr>
+      <td>Klass:</td>
+      <td>
+      <select name="class">
+        <option></option>
+        <option>Teadur</option>
+        <option>Klienditeenindaja</option>
+        <option>Proviisor</option>
+        <option>Spetsialist</option>
+ <option>Õpetaja</option>
+ <option>Juht</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Rass:</td>
+      <td>
+      <select name="race">
+        <option></option>
+        <option>Valge</option>
+        <option>Kollane</option>
+        <option>Must</option>
+        <option>Muu</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Sugu:</td>
+      <td>
+        <td>Sugu:</td> 
+   <td><input type="radio" name="gender" value="female">Naine
+ <input type="radio" name="gender" value="male">Mees</td>
+      </td>
+    </tr>
+    <tr>
+      <td>Lemmikloom kaasas:</td>
+      <td><input type="checkbox" name="petalong" value="yes" <?php if(isset($_GET["petalong"]) && ($_GET["petalong"] == "yes")) { echo "checked"; } ?>></td>
+    </tr>
+    <tr>
+      <td>Kirjeldus:</td> 
+   <td><textarea name="description" cols="24" rows="8">Kirjelda oma kangelast</textarea></td> 
+    </tr>
+  </table>
+  <input type="submit" name="nupp" value="Sisesta">
+  <input type="reset" value="Tagasi">
+
+  </form>
+</body>
+</html>
