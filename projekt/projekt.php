@@ -18,7 +18,9 @@ mis kindlasti tahab täiendust. Õpin, vaatan ja uurin ning jõuan sellise lahen
 <title>Täringumäng</title>
 </head>
 <body>
-Täringumäng. Mängu mõte on: kas suudad veeretada arvutist suurema summa ? Toimub 3 veeretuskorda. Iga veeretusega saad täringu kas alles jätta või selle uuesti veeretada.
+Täringumäng. 
+<p>
+Kas suudad veeretada arvutist suurema summa ? 
 <p>
 
 
